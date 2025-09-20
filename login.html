@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | UrbanYatri</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ✅ SAME HEADER AS index.html -->
+    <header>
+        <div class="navbar">
+            <div class="nav-logo"></div>
+            <div class="navname">
+                <h1><a href="index.html">UrbanYatri</a></h1>
+            </div>
+            
+           <div class="opts">
+                <div class="nav-home border">
+                    <p><span><a href="index.html">Home</a></span></p>
+                </div> 
+                <div class="nav-todo border">
+                    <p><span><a href="#">Things To Do</a></span> </p>
+                </div>
+                <div class="nav-destinations border">
+                    <p><span><a href="destination.html">Destinations</a></span> </p>
+                </div>
+                <div class="nav-contacts border">
+                    <p><span><a href="contact.html">Contact</a></span></p>
+                </div>
+           </div> 
+             
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input type="text" placeholder="Search places" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>  
+            <div class="nav-register ">
+                <div class="login"><a href="login.html"><button>Login</button></a></div>
+                <div class="signup"><a href="signup.html"><button>Sign-up</button></a></div>              
+            </div>
+        </div>
+    </header>
+
+    <!-- ✅ LOGIN FORM -->
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>Login</h2>
+            <form>
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <div class="auth-footer">
+                Don’t have an account? <a href="signup.html">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ SAME FOOTER AS index.html -->
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <b>Main</b>
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">Work With Us</a>
+            </ul>
+            <ul>
+                <b>Legal</b>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Refund</a>
+            </ul>
+            <ul>
+                <b>Social</b>
+                <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i>Twitter</a>
+                <a href="#"><i class="fa-brands fa-youtube"></i>YouTube</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            </ul>
+        </div>
+        <div class="footer-msg">Made With <i class="fa-solid fa-heart"></i> in Kolhapur</div>
+    </footer>
+</body>
+</html>

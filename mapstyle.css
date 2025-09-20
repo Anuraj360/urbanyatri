@@ -1,0 +1,98 @@
+html, body {
+  overflow-x: hidden;   /* ✅ keeps info panel hidden until it slides in */
+}
+
+/* main content fits between header + footer */
+body { 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    margin: 0;
+}
+
+header, footer {
+    flex-shrink: 0;
+}
+
+.main-content { 
+    flex: 1;
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;  /* extra safeguard */
+}
+
+/* 3D model area */
+.model-box {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  transition: flex 0.4s ease;
+  overflow: hidden;
+}
+
+.model-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #ddd;
+}
+
+/* sliding info panel */
+.info-panel {
+  position: absolute;
+  top: 0;
+  right: 0;                  /* stay flush with right edge */
+  width: 40%;
+  height: 100%;
+  background: #fff;
+  border-left: 2px solid #ccc;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  overflow-y: auto;
+  padding: 20px;
+  padding-bottom: 0;
+  z-index: 10;
+
+  /* ✅ Start fully hidden by moving itself 100% of its own width */
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+}
+
+.info-panel.open {
+  transform: translateX(0);   /* slide into view */
+}
+
+/* toggle button */
+.toggle-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #febd68;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  z-index: 20;
+  transition: right 0.4s ease;
+  font-size: 1.2rem;
+}
+
+/* move button with panel when open */
+.info-panel.open ~ .toggle-btn {
+  right: 40%;
+}
+.info-panel pre { 
+  white-space: pre-wrap; /* ✅ wrap long lines */ 
+  word-wrap: break-word; /* older fallback */ 
+  overflow-wrap: break-word; /* modern fallback */
+}

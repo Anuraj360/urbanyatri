@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panhala- UrbanYatri</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mapstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="nav-logo"></div>
+      <div class="navname">
+        <h1><a href="index.html">UrbanYatri</a></h1>
+      </div>
+      <div class="opts">
+        <div class="nav-home border">
+                <p><span><a href="index.html">Home</a></span></p>
+            </div> 
+            <!------------------------------------------------------------>
+            <div class="nav-todo border">
+                <p><span><a href="#">Things To Do</a></span> </p>
+                
+            </div>
+            <!------------------------------------------------------------>
+            <div class="nav-destinations border">
+                <p><span><a href="destination.html">Destinations</a></span> </p>
+            </div>
+            <!------------------------------------------------------------>
+            <div class="nav-contacts border">
+                <p><span><a href="contact.html">Contact</a></span></p>
+            </div>
+      </div>
+      <div class="nav-search">
+        <select class="search-select"><option>All</option></select>
+        <input type="text" placeholder="Search places" class="search-input">
+        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>  
+      <div class="nav-register">
+        <div class="login"><a href="login.html"><button>Login</button></a></div>
+          <div class="signup"><a href="signup.html"><button>Sign-up</button></a></div> 
+      </div>
+    </div>
+  </header>
+    <div class="map">
+  <div class="main-content">
+    <!-- 3D model placeholder -->
+    <div class="model-box" id="modelBox">
+      <!-- Replace src with actual 3D embed -->
+      <iframe src="" title="Panhala Fort 3D Model" style="background-image: url(panhala.jpg); background-size: cover;"></iframe>
+    </div>
+
+    <!-- sliding info panel -->
+    <div class="info-panel" id="infoPanel">
+      <h2>🏰 Panhala Fort – The Pride of Kolhapur</h2>
+     <p><pre>
+
+📍 Location
+
+Panhala Fort is located about 20 kilometers from Kolhapur city in Maharashtra. 
+Nestled at
+an altitude of 845 meters, the fort offers breathtaking panoramic views of the 
+Sahyadri mountain ranges, making it not just a historical site but also a scenic 
+getaway. The fort is easily accessible by road transport—tourists can reach here 
+convenientlyusing state transport buses, local taxis, or private vehicles. 
+The journey itself is memorable as it passes through winding roads, lush 
+greenery, and cool mountain air.
+
+🏛 Historical Significance
+
+Panhala Fort has a rich and layered history dating back to the 12th century, when 
+it was built by the Shilahara dynasty. Over time, it witnessed expansions by the 
+Yadavas of Devagiri and later came under the control of the Bahmani Sultans. 
+However, its greatestimportance came during the 17th century, when Chhatrapati 
+Shivaji Maharaj made it a strategic base. The fort is most famous for its association 
+with the Battle of Pavan  khind (1660), where the brave warrior Baji Prabhu Deshpande 
+sacrificed his life to ensure Shivaji Maharaj’s safe escape from the siege. For some 
+time, Panhala even served as the capital of the Maratha Empire, marking its place in 
+the golden chapters of Indian history.
+  
+
+🏗 Architecture
+
+Spread across a 7 km perimeter, Panhala is one of the largest forts in the Deccan 
+region. Its fortified walls, massive bastions, and hidden escape routes show how 
+advanced the fort’s defense system was. Visitors can explore iconic structures 
+like the Teen Darwaza (triple-arched gateway), the mysterious Andhar Bavadi 
+(hidden well), the Sajja Kothi, and the grand Ambarkhana granaries. The fort’s 
+natural defense is equally impressive—surrounded by steep slopes and dense forests, 
+making it extremely difficult for enemies to conquer.
+
+⚔ Historical Importance
+
+Panhala was a stronghold of the Marathas and witnessed fierce battles against the 
+Mughals and the Adilshahi forces. It holds a special place in Maratha history because 
+Shivaji Maharaj spent over 500 days here, making it his longest stay at any fort. 
+For the people of Maharashtra, Panhala is more than stone walls—it is a symbol of 
+courage, sacrifice, and resilience.
+
+🌄 Tourist Experience
+
+Visiting Panhala is like walking back in time. Tourists can enjoy breathtaking views 
+of Kolhapur and the Sahyadri hills, especially from the fort’s bastions. It is a 
+paradise for trekkers, history lovers, and photographers, as the fort offers a blend 
+of heritage and natural beauty. Heritage walks across the ruins bring the past alive, 
+while the evening sunset views create a magical atmosphere.
+
+🕕 Visiting Hours
+
+The fort is open to visitors from 6:00 AM to 6:00 PM, giving ample time for 
+exploration. The best season to visit is between October and February, when the 
+climate is pleasant and the surrounding hills are lush green.
+
+📌 Nearby Attractions
+
+While visiting Panhala, tourists can also explore:
+
+Jyotiba Temple (16 km away) – a major pilgrimage center.
+
+Mahalaxmi Temple in Kolhapur city – one of the Shakti Peethas.
+
+Teen Darwaza viewpoint and local food stalls offering authentic Kolhapuri flavors.
+
+
+💡 Tourist Tips
+
+Carry a bottle of water and some light snacks.
+
+Wear comfortable shoes as exploring the fort involves a fair amount of walking 
+and climbing.
+
+
+      </pre></p>
+    </div>
+
+    <!-- toggle button -->
+    <div class="toggle-btn" id="toggleBtn">
+      <i class="fa-solid fa-arrow-left"></i>
+    </div>
+  </div>
+ </div>
+  <footer>
+    <div class="footer-content">
+      <ul>
+        <b>Main</b>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Work With Us</a>
+      </ul>
+      <ul>
+        <b>Legal</b>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Refund</a>
+      </ul>
+      <ul>
+        <b>Social</b>
+        <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i>Twitter</a>
+        <a href="#"><i class="fa-brands fa-youtube"></i>YouTube</a>
+        <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+      </ul>
+    </div>
+    <div class="footer-msg">Made With <i class="fa-solid fa-heart"></i> in Kolhapur</div>
+  </footer>
+
+  <script>
+    const panel = document.getElementById("infoPanel");
+    const modelBox = document.getElementById("modelBox");
+    const toggleBtn = document.getElementById("toggleBtn");
+    const icon = toggleBtn.querySelector("i");
+
+    toggleBtn.addEventListener("click", () => {
+      panel.classList.toggle("open");
+
+      if (panel.classList.contains("open")) {
+        modelBox.style.flex = "0 0 60%"; // shrink to 60%
+        icon.classList.remove("fa-arrow-left");
+        icon.classList.add("fa-arrow-right");
+      } else {
+        modelBox.style.flex = "1"; // expand to 100%
+        icon.classList.remove("fa-arrow-right");
+        icon.classList.add("fa-arrow-left");
+      }
+    });
+  </script>
+</body>
+</html>

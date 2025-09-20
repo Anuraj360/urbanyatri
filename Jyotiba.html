@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jyotiba - UrbanYatri</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mapstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="nav-logo"></div>
+      <div class="navname">
+        <h1><a href="index.html">UrbanYatri</a></h1>
+      </div>
+      <div class="opts">
+        <div class="nav-home border">
+                <p><span><a href="index.html">Home</a></span></p>
+            </div> 
+            <!------------------------------------------------------------>
+            <div class="nav-todo border">
+                <p><span><a href="#">Things To Do</a></span> </p>
+                
+            </div>
+            <!------------------------------------------------------------>
+            <div class="nav-destinations border">
+                <p><span><a href="destination.html">Destinations</a></span> </p>
+            </div>
+            <!------------------------------------------------------------>
+            <div class="nav-contacts border">
+                <p><span><a href="contact.html">Contact</a></span></p>
+            </div>
+      </div>
+      <div class="nav-search">
+        <select class="search-select"><option>All</option></select>
+        <input type="text" placeholder="Search places" class="search-input">
+        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>  
+      <div class="nav-register">
+          <div class="login"><a href="login.html"><button>Login</button></a></div>
+                <div class="signup"><a href="signup.html"><button>Sign-up</button></a></div>               
+      </div>
+    </div>
+  </header>
+    <div class="map">
+  <div class="main-content">
+    <!-- 3D model placeholder -->
+    <div class="model-box" id="modelBox">
+      <!-- Replace src with actual 3D embed -->
+      <iframe src="" title="Jyotiba Temple 3D Model" style="background-image: url(jyotiba.jpg); background-size: cover;" ></iframe>
+    </div>
+
+    <!-- sliding info panel -->
+    <div class="info-panel" id="infoPanel">
+      <h2>🛕 Jyotiba Temple – The Sacred Hill of Faith</h2>
+     <p><pre>
+
+📍 Location
+
+The Jyotiba Temple lies around 17 km northwest of Kolhapur city, perched at an 
+altitude of 3,124 feet in the Panhala mountain range. The temple’s hilltop 
+location provides not just a divine experience but also scenic landscapes and 
+cool mountain breezes.
+
+🏛 Historical Significance
+
+Dedicated to Lord Jyotiba, who is believed to be a combined incarnation of 
+Brahma, Vishnu, and Maheshwar (Shiva), this temple is one of Maharashtra’s 
+most revered pilgrimage sites. The original shrine was built in 1730 by Navaji 
+Saya, a devotee, and was later expanded by Daulatrao Shinde in 1808. Over the 
+centuries, it has become a center of faith for devotees not only from Maharashtra 
+but also from Karnataka and nearby states.
+
+🏗 Architecture
+
+The temple stands out with its tall shikhara (spire), visible from far away, 
+guiding pilgrims to the sacred site. Built of stone, it has spacious courtyards, 
+pillared halls, and a serene sanctum where the four-armed idol of Jyotiba 
+resides. The idol is adorned with flowers and ornaments, radiating divine 
+energy. The complex also includes smaller shrines dedicated to deities like 
+Kedareshwar, adding to the temple’s spiritual richness.
+
+🙏 Religious Importance
+
+Lord Jyotiba is revered as a protector deity who destroyed demons Ratnasur 
+and Raktasur. Devotees firmly believe that offering prayers here helps fulfill
+wishes, protect from evil, and bring prosperity. Sundays are especially
+considered auspicious, drawing large crowds of pilgrims who come with deep 
+faith and devotion.
+
+🎉 Festivals
+
+The temple is most famous for its Chaitra Purnima festival (April-May). 
+During this time, lakhs of devotees climb the hill to offer prayers. 
+The entire hill transforms into a sea of pink, as devotees scatter gulal 
+(colored powder) in devotion. The sight is both spiritually moving and 
+visually spectacular. Apart from this, every Sunday also witnesses large 
+gatherings of devotees.
+
+🕕 Visiting Hours
+
+The temple remains open from 5:00 AM to 9:00 PM daily. The best times 
+to visit are early mornings or evenings, when the temple atmosphere 
+is both peaceful and spiritually uplifting.
+
+📌 Nearby Attractions
+
+While visiting Jyotiba Temple, tourists can also explore:
+
+Panhala Fort – a nearby historical site.
+
+Mahalaxmi Temple – a spiritual gem in Kolhapur.
+
+Rankala Lake – a perfect spot for evening walks and relaxation.
+
+
+💡 Tourist Tips
+
+During festivals, expect very large crowds and prepare accordingly.
+
+Carry drinking water, as it is a hill temple.
+
+Wear comfortable clothes and footwear since climbing is required.
+
+
+
+      </pre></p>
+    </div>
+
+    <!-- toggle button -->
+    <div class="toggle-btn" id="toggleBtn">
+      <i class="fa-solid fa-arrow-left"></i>
+    </div>
+  </div>
+ </div>
+  <footer>
+    <div class="footer-content">
+      <ul>
+        <b>Main</b>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Work With Us</a>
+      </ul>
+      <ul>
+        <b>Legal</b>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Refund</a>
+      </ul>
+      <ul>
+        <b>Social</b>
+        <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i>Twitter</a>
+        <a href="#"><i class="fa-brands fa-youtube"></i>YouTube</a>
+        <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+      </ul>
+    </div>
+    <div class="footer-msg">Made With <i class="fa-solid fa-heart"></i> in Kolhapur</div>
+  </footer>
+
+  <script>
+    const panel = document.getElementById("infoPanel");
+    const modelBox = document.getElementById("modelBox");
+    const toggleBtn = document.getElementById("toggleBtn");
+    const icon = toggleBtn.querySelector("i");
+
+    toggleBtn.addEventListener("click", () => {
+      panel.classList.toggle("open");
+
+      if (panel.classList.contains("open")) {
+        modelBox.style.flex = "0 0 60%"; // shrink to 60%
+        icon.classList.remove("fa-arrow-left");
+        icon.classList.add("fa-arrow-right");
+      } else {
+        modelBox.style.flex = "1"; // expand to 100%
+        icon.classList.remove("fa-arrow-right");
+        icon.classList.add("fa-arrow-left");
+      }
+    });
+  </script>
+</body>
+</html>

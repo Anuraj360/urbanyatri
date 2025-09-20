@@ -1,0 +1,706 @@
+*{
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+}
+
+button {
+    border: none;
+    background: none;
+    color: inherit;
+}
+ a {
+    text-decoration: none;
+    color: inherit;
+ }
+
+.border{
+    border: 1.5px solid transparent;
+    border-radius: 30px;
+}
+.border:hover{
+    border: 1.5px solid transparent;
+    border-radius: 30px;
+}
+
+/* navbar */
+.navbar{
+    height: 100px;
+    background-color:beige;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+/* name */
+.nav-logo{
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    background-image: url(logo.jpg);
+    background-size: cover;
+    margin: 10px 10px 0px 10px;
+}
+.navname{
+    font-family: Poppins, "Poppins Fallback";
+    height: 80px;
+    width: 160px; 
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* search bar */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 20%;
+    border-radius: 3px; 
+    margin: 30px 0px 0px 10px;
+}
+
+.search-select{
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 50px;
+    text-align: center;
+    border: none;
+    
+}
+.search-input{
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: #0f1111;
+}
+
+/* options */
+
+span{
+    font-size: 1.1rem;  
+}
+
+.opts{
+    display: flex;
+    width: 650px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+/* home */
+.nav-home{
+    height: 30px;
+    width: 150px; 
+    margin: 30px;  
+}
+.nav-home p{
+    text-align: center;
+    padding-top: 5px; 
+}
+.nav-home:hover{
+    background-color: wheat;
+}
+
+/* to do things*/
+
+.nav-todo{
+    height: 30px;
+    width:  250px; 
+    margin: 30px;  
+}
+.nav-todo p{
+    text-align: center;
+    padding-top: 5px; 
+}
+.nav-todo:hover{
+    background-color: wheat;
+}
+/* destinations */
+.nav-destinations{
+    height: 30px;
+    width: 250px; 
+    margin: 30px;  
+}
+.nav-destinations p{
+    text-align: center;
+    padding-top: 5px; 
+}
+.nav-destinations:hover{
+    background-color: wheat;
+}
+/* contacts */
+.nav-contacts{
+    height: 30px;
+    width: 200px; 
+    margin: 30px;  
+}
+.nav-contacts p{
+    text-align: center;
+    padding-top: 5px; 
+}
+.nav-contacts:hover{
+    background-color: wheat;
+}
+/* log-in and signup */
+
+.nav-register{
+    display: flex;
+    justify-content: space-evenly; 
+    margin: 35px 30px 30px 60px;  
+}
+.login{
+    padding: 5px;
+    margin-right: 20px;
+    border: 2px solid #febd68;
+    border-radius: 10px
+}
+.login:hover{
+    background-color: wheat;
+}
+.signup{
+    padding: 5px;
+    border: 2px solid #febd68;
+    border-radius: 10px
+}
+.signup:hover{
+    background-color: wheat;
+}
+
+/* hero section */
+.hero-section{
+    height: 750px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: 
+        linear-gradient(to bottom,rgba(225,225,225,0) 60%, rgba(225,255,225,1) 100%),    
+        linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+        url(valley.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+} 
+
+.hero-content{
+    margin:  90px 300px 0px 300px;
+    height: 600px ;
+    width: 900px;
+    color: white;
+}
+
+.hero-heading{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+}
+.hero-moving{
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 60px;
+}
+.hero-msg{
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 100px;
+}
+.hero-start{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+.explore{
+    height: 60px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(3, 110, 3, 0.7);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.explore button{
+    font-size: 30px;
+}
+.explore:hover{
+    background-color: rgba(3, 92, 3, 0.7);
+}
+
+/* other options */
+.other-opts{
+    height: 700px;
+    background-color: white;
+}
+.message-bold{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 50px;
+    margin: 0px 0px 30px 0px;
+}
+.long-text{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.BOX{
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    width: 485px ;
+    border: 1px solid black;
+    border-radius:10px;
+}
+.image{
+    margin-top: 0px;
+    height: 280px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.hotel{
+    background-image: url(hotel.jpg);
+    background-size: cover;
+}
+.shopping{
+    background-image: url(shopping.jpg);
+    background-size: cover;
+}
+.news{
+    background-image: url(news.jpg);
+    background-size: cover;
+}
+.box-heading{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.box-content{
+    font-size: 1.2rem;
+    padding: 2px 0px 0px 10px;
+}
+
+/* testimonials */
+.testimonials{
+    height: 500px;
+    background-color: rgb(246, 246, 246);
+}
+.boxes2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.review-box{
+    /* border: 1px solid black; */
+    margin-top: 15px;
+    background-color: rgb(237, 236, 236);
+    height: 250px;
+    width: 600px;
+}
+.icon{
+    font-size: 2rem;
+    margin: 10px;
+}
+.review{
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+.name{
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+/* footer */
+.footer-content{
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly; 
+}
+ul{
+    padding-inline-start: 0px;
+    padding-top: 40px;
+}
+ul a{ 
+   display: block;
+   font-size: 0.9rem;
+   margin-top: 20px;
+}
+ .footer-msg{
+    text-align: center;
+    font-size: 1rem;
+    height: 60px;
+    
+ }
+ footer{
+    background-color: beige
+ }
+
+ .map{
+    height: 90vh;   
+ }
+ /* ====== Login & Signup Form Styling ====== */
+.auth-container {
+    min-height: 80vh; /* leaves space for header & footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.auth-box {
+    background: white;
+    padding: 40px;
+    width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.auth-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-box label {
+    font-size: 0.9rem;
+    margin: 8px 0 4px;
+    font-weight: bold;
+    color: #444;
+}
+
+.auth-box input,
+.auth-box select,
+.auth-box textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.auth-box input:focus,
+.auth-box select:focus,
+.auth-box textarea:focus {
+    border: 1px solid #028a0f; /* green highlight */
+}
+
+.auth-box button {
+    background-color: #028a0f;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.auth-box button:hover {
+    background-color: #026d0c;
+}
+
+/* Small message under form */
+.auth-footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.auth-footer a {
+    color: #028a0f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+/* --------- Login & Signup Forms --------- */
+.form-container {
+  width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-container textarea {
+  resize: vertical;
+}
+
+.form-container button {
+  margin-top: 20px;
+  padding: 12px;
+  background: #036e03;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background: #025702;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+  margin: 5px 0 15px;
+}
+
+.switch-form {
+  text-align: center;
+  margin-top: 15px;
+}
+.switch-form a {
+  color: #036e03;
+  font-weight: bold;
+}
+/* === Extra Styling for Gender, Country & Mobile === */
+
+/* Gender radio buttons */
+.gender-options {
+    display: flex;
+    gap: 15px;
+    margin: 8px 0 15px;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.gender-options input {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+/* Country dropdown */
+.auth-box select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    outline: none;
+    background-color: #fff;
+    transition: border 0.3s ease;
+}
+
+.auth-box select:focus {
+    border-color: #028a0f;
+}
+
+/* Mobile number input */
+.auth-box input[type="tel"] {
+    letter-spacing: 1px;
+}
+
+/* Destinations Page */
+.destinations-page {
+    padding: 40px;
+    background-color: white;
+}
+
+.destination-box {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+}
+
+.destination-box:hover {
+    transform: scale(1.02);
+    background-color: #f5f5f5;
+}
+
+.destination-image {
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.destination-info {
+    width: 60%;
+    padding: 20px;
+    font-size: 1.1rem;
+    color: black;
+}
+/* Contact Page Specific Styles */
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      padding: 50px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .contact-info h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .contact-info strong {
+      color: #000;
+    }
+
+    .contact-info img {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    .contact-form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form label {
+      display: block;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+    }
+
+    .contact-form button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      background: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #0056b3;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+/* ===== Explore Page Map Section ===== */
+.explore-map {
+    position: relative;
+    height: 90vh;  /* fills space between header and footer */
+    background: url('kolhapur.png') no-repeat center center;
+    background-size:75%;
+    overflow: hidden;
+}
+
+/* All location markers */
+.marker {
+    position: absolute;
+    color: red;
+    font-size: 2.5rem;
+    text-shadow: 0 0 6px #fff; /* glow for contrast */
+    transition: transform 0.2s ease;
+}
+.marker:hover {
+    transform: scale(1.2);
+}
+
+/* Random scattered positions */
+.marker1 { top: 18%; left: 40%; }
+.marker2 { top: 40%; left: 43%; }
+.marker3 { top: 79%; left: 49%; }
+.marker4 { top: 29%; left: 51%; }
+.marker5 { top: 58%; left: 47%; }
+/* Name labels under each location icon */
+.marker .loc-name {
+    display: block;
+    margin-top: 5px;      /* small gap below icon */
+    font-size: 0.9rem;
+    color: black;         /* choose color for readability */
+    text-align: center;
+    text-shadow: 0 0 4px #fff;
+}

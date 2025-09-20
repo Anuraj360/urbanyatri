@@ -1,0 +1,315 @@
+*{
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+}
+
+button {
+    border: none;
+    background: none;
+    color: inherit;
+}
+ a {
+    text-decoration: none;
+    color: inherit;
+ }
+
+.border{
+    border: 1.5px solid transparent;
+    border-radius: 30px;
+}
+.border:hover{
+    border: 1.5px solid transparent;
+    border-radius: 30px;
+}
+
+/* navbar */
+.navbar{
+    height: 100px;
+    background-color:beige;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+/* name */
+.nav-logo{
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    background-image: url(logo.jpg);
+    background-size: cover;
+    margin: 10px 10px 0px 10px;
+}
+.navname{
+    font-family: Poppins, "Poppins Fallback";
+    height: 80px;
+    width: 160px; 
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* search bar */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 20%;
+    border-radius: 3px; 
+    margin: 30px 0px 0px 10px;
+}
+
+.search-select{
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 50px;
+    text-align: center;
+    border: none;
+    
+}
+.search-input{
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: #0f1111;
+}
+
+/* options */
+
+span{
+    font-size: 1.1rem;  
+}
+
+.opts{
+    display: flex;
+    width: 650px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+/* home */
+.nav-home{
+    height: 30px;
+    width: 150px; 
+    margin: 30px;  
+}
+.nav-home p{
+    text-align: center;
+    padding-top: 5px; 
+}
+.nav-home:hover{
+    background-color: wheat;
+}
+
+/* to do things*/
+
+.nav-todo{
+    height: 30px;
+    width:  250px; 
+    margin: 30px;  
+}
+.nav-todo p{
+    text-align: center;
+    padding-top: 5px; 
+}
+.nav-todo:hover{
+    background-color: wheat;
+}
+/* destinations */
+.nav-destinations{
+    height: 30px;
+    width: 250px; 
+    margin: 30px;  
+}
+.nav-destinations p{
+    text-align: center;
+    padding-top: 5px; 
+}
+.nav-destinations:hover{
+    background-color: wheat;
+}
+/* contacts */
+.nav-contacts{
+    height: 30px;
+    width: 200px; 
+    margin: 30px;  
+}
+.nav-contacts p{
+    text-align: center;
+    padding-top: 5px; 
+}
+.nav-contacts:hover{
+    background-color: wheat;
+}
+/* log-in and signup */
+
+.nav-register{
+    display: flex;
+    justify-content: space-evenly; 
+    margin: 35px 30px 30px 60px;  
+}
+.login{
+    padding: 5px;
+    margin-right: 20px;
+    border: 2px solid #febd68;
+    border-radius: 10px
+}
+.login:hover{
+    background-color: wheat;
+}
+.signup{
+    padding: 5px;
+    border: 2px solid #febd68;
+    border-radius: 10px
+}
+.signup:hover{
+    background-color: wheat;
+}
+
+/* Main Section */
+.hero-section{
+    display: block;
+}
+.shop-heading{
+    display: flex;
+    justify-content: center;
+    font-size:2rem;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.scroll-container{
+    position: relative;
+     margin-bottom: 40px;
+}
+.scroll-btn{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        color: black;
+        background: rgba(245,245,220,0.7); /* beige-like to match site */
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 5;
+    }
+.scroll-btn.left{ left: 0; }
+.scroll-btn.right{ right: 0; }
+.boxes{
+    display: flex;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    scroll-behavior: smooth;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.BOX{
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    width: 485px ;
+    border: 1px solid black;
+    border-radius:10px;
+}
+.boxes {
+    display: flex;
+    flex-wrap: nowrap;     
+    gap: 10px;             
+    padding: 10px;         
+}
+
+.BOX {
+    flex: 0 0 485px;       
+}
+.image{
+    
+    background-size: cover;
+    background-color: black;
+    margin-top: 0px;
+    height: 280px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.box-heading{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.box-content{
+    font-size: 1.2rem;
+    padding: 2px 0px 0px 10px;
+}
+
+/* footer */
+footer{
+    margin-top: 40px;
+}
+.footer-content{
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly; 
+}
+ul{
+    padding-inline-start: 0px;
+    padding-top: 40px;
+}
+ul a{ 
+   display: block;
+   font-size: 0.9rem;
+   margin-top: 20px;
+}
+ .footer-msg{
+    text-align: center;
+    font-size: 1rem;
+    height: 60px;
+    
+ }
+ footer{
+    background-color: beige
+ }
+ #Archies{
+    background-image: url(Archies.jpg);
+ }
+ #Anandstores{
+    background-image: url(Anand\ Stores\ \(2\).jpg);
+ }
+ #Rajeshahi{
+    background-image: url(3]Rajeshahi\ Shoes\ \(2\).jpg);
+    background-size: 50%;
+ }
+ #Karveer{
+    background-image: url(4]A\ Karveer\ Store\ \(2\).jpg);
+    background-size: 50%;
+ }
+ #Bhajimandai{
+    background-image: url(5]Bhaji\ Mandai\ \(2\).jpg);
+ }
+ #Miniso{
+    background-image: url(Miniso.jpg);
+ }
+ #Dmart{
+    background-image: url(D\ Mart\ \(2\).jpg);
+ }
+ #Reliance{
+    background-image: url(Reliance\ Mall.jpg);
+ }
+ #DYP{
+    background-image: url(DYP\ City\ \(2\).jpg);
+ }
+ #Puma{
+    background-image: url(Puma\ Store\ \(2\).jpg);
+ }
+ #Raymond{
+    background-image: url(Raymond\ Store.jpg);
+ }
