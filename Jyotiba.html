@@ -50,7 +50,15 @@
     <!-- 3D model placeholder -->
     <div class="model-box" id="modelBox">
       <!-- Replace src with actual 3D embed -->
-      <iframe src="" title="Jyotiba Temple 3D Model" style="background-image: url(jyotiba.jpg); background-size: cover;" ></iframe>
+      <model-viewer
+    src="./angkor_wat_temple_cambodia.glb"
+    autoplay
+    camera-controls
+    auto-rotate
+    shadow-intensity="1">
+  </model-viewer>
+
+      <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     </div>
 
     <!-- sliding info panel -->
@@ -181,5 +189,12 @@ Wear comfortable clothes and footwear since climbing is required.
       }
     });
   </script>
+  <style>
+     model-viewer {
+      width: 80vw;   /* takes 80% of viewport width */
+      height: 80vh;  /* takes 80% of viewport height */
+      border: none;
+    }
+   </style>
 </body>
 </html>
