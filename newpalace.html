@@ -50,7 +50,14 @@
     <!-- 3D model placeholder -->
     <div class="model-box" id="modelBox">
       <!-- Replace src with actual 3D embed -->
-      <iframe src="" title="New Palace 3D Model"style="background-image: url(newpalace.jpg); background-size: cover;"></iframe>
+     <model-viewer
+    src="./palace_of_westminster (1).glb"
+    autoplay
+    camera-controls
+    auto-rotate
+    shadow-intensity="1">
+  </model-viewer>
+   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     </div>
 
     <!-- sliding info panel -->
@@ -186,5 +193,12 @@ Hire a local guide if possible, to get detailed insights into the history.
       }
     });
   </script>
+  <style>
+     model-viewer {
+      width: 80vw;   /* takes 80% of viewport width */
+      height: 80vh;  /* takes 80% of viewport height */
+      border: none;
+    }
+   </style>
 </body>
 </html>
