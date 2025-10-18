@@ -1,101 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Kolhapur - UrbanYatri</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Kolhapur - UrbanYatri</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <style>
+    body { margin: 0; padding: 0; }
+
+    .explore-map {
+      position: relative;
+      width: 100%;
+      height: 90vh;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .map-label {
+      color: #fff;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+      text-align: center;
+      transform: translate(-50%, -20px);
+      white-space: nowrap;
+      font-family: Arial, sans-serif;
+      pointer-events: none;
+    }
+  </style>
 </head>
+
 <body>
-    <!-- ===== Header (same as index) ===== -->
-    <header>
-        <div class="navbar">
-            <div class="nav-logo"></div>
-            <div class="navname">
-                <h1><a href="index.html">UrbanYatri</a></h1>
-            </div>
-            <div class="opts">
-                <div class="nav-home border">
-                    <p><span><a href="index.html">Home</a></span></p>
-                </div> 
-                <div class="nav-todo border">
-                    <p><span><a href="#">Things To Do</a></span></p>
-                </div>
-                <div class="nav-destinations border">
-                    <p><span><a href="destination.html">Destinations</a></span></p>
-                </div>
-                <div class="nav-contacts border">
-                    <p><span><a href="contact.html">Contact</a></span></p>
-                </div>
-            </div>
-            <div class="nav-search">
-                <select class="search-select"><option>All</option></select>
-                <input type="text" placeholder="Search places" class="search-input">
-                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-            </div>  
-            <div class="nav-register">
-                <div class="login"><a href="login.html"><button>Login</button></a></div>
-                <div class="signup"><a href="signup.html"><button>Sign-up</button></a></div>             
-            </div>
-        </div>
-    </header>
-    <!-- ===== End Header ===== -->
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="navbar">
+      <div class="nav-logo"></div>
+      <div class="navname">
+        <h1><a href="index.html">UrbanYatri</a></h1>
+      </div>
+      <div class="opts">
+        <div class="nav-home border"><p><span><a href="index.html">Home</a></span></p></div>
+        <div class="nav-todo border"><p><span><a href="#">Things To Do</a></span></p></div>
+        <div class="nav-destinations border"><p><span><a href="destination.html">Destinations</a></span></p></div>
+        <div class="nav-contacts border"><p><span><a href="contact.html">Contact</a></span></p></div>
+      </div>
+      <div class="nav-search">
+        <select class="search-select"><option>All</option></select>
+        <input type="text" placeholder="Search places" class="search-input">
+        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+      <div class="nav-register">
+        <div class="login"><a href="login.html"><button>Login</button></a></div>
+        <div class="signup"><a href="signup.html"><button>Sign-up</button></a></div>
+      </div>
+    </div>
+  </header>
 
-    <!-- ===== Central Explore Section ===== -->
-    <main class="explore-map">
-        <!-- Six scattered location markers -->
-    <a href="Rankala.html" class="marker marker1">
-        <i class="fa-solid fa-location-dot"></i>
-        <span class="loc-name">Rankala Lake</span>
-    </a>
+  <!-- ===== 3D Interactive Map ===== -->
+  <main class="explore-map">
+    <div id="map"></div>
+  </main>
 
-    <a href="newpalace.html" class="marker marker2">
-        <i class="fa-solid fa-location-dot"></i>
-        <span class="loc-name">New Palace</span>
-    </a>
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="footer-content">
+      <ul>
+        <b>Main</b>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Work With Us</a>
+      </ul>
+      <ul>
+        <b>Legal</b>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Refund</a>
+      </ul>
+      <ul>
+        <b>Social</b>
+        <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i> Twitter</a>
+        <a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a>
+        <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      </ul>
+    </div>
+    <div class="footer-msg">Made With <i class="fa-solid fa-heart"></i> in Kolhapur</div>
+  </footer>
 
-        <a href="panhala.html" class="marker marker3">
-        <i class="fa-solid fa-location-dot"></i>
-        <span class="loc-name">Panhala</span>
-    </a>
-    <a href="Jyotiba.html" class="marker marker4">
-        <i class="fa-solid fa-location-dot"></i>
-        <span class="loc-name">Jyotiba</span>
-    </a>
-    <a href="mahalaxmi.html" class="marker marker5">
-        <i class="fa-solid fa-location-dot"></i>
-        <span class="loc-name">Mahalaxmi Temple</span>
-    </a>
-    
-    </main>
+  <!-- ===== Mapbox JS ===== -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXJpbi1nYWRlcmFvc2FoZWIiLCJhIjoiY21nbnY2dzE3MXFmMjJpc2dkenF3YTBxbyJ9.xywXj7iAcwmcv7ZzwP0wlw';
 
-    <!-- ===== Footer (same as index) ===== -->
-    <footer>
-        <div class="footer-content">
-            <ul>
-                <b>Main</b>
-                <a href="#">Home</a>
-                <a href="#">Contact</a>
-                <a href="#">Work With Us</a>
-            </ul>
-            <ul>
-                <b>Legal</b>
-                <a href="#">Terms</a>
-                <a href="#">Privacy</a>
-                <a href="#">Refund</a>
-            </ul>
-            <ul>
-                <b>Social</b>
-                <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="#"><i class="fa-brands fa-square-x-twitter"></i> Twitter</a>
-                <a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a>
-                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
-            </ul>
-        </div>
-        <div class="footer-msg">Made With <i class="fa-solid fa-heart"></i> in Kolhapur</div>
-    </footer>
-    <!-- ===== End Footer ===== -->
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [74.233, 16.705],
+      zoom: 12.8,
+      pitch: 60,
+      bearing: 0,
+      antialias: true
+    });
+
+    map.addControl(new mapboxgl.NavigationControl());
+    map.addControl(new mapboxgl.FullscreenControl());
+
+    map.on('load', () => {
+      map.addSource('mapbox-dem', {
+        type: 'raster-dem',
+        url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        tileSize: 512,
+        maxzoom: 14
+      });
+      map.setTerrain({ source: 'mapbox-dem', exaggeration: 1.5 });
+
+      map.addLayer({
+        id: 'sky',
+        type: 'sky',
+        paint: {
+          'sky-type': 'atmosphere',
+          'sky-atmosphere-sun': [0.0, 0.0],
+          'sky-atmosphere-sun-intensity': 15
+        }
+      });
+
+      const locations = [
+        { name: "Rankala Lake", coords: [74.2080, 16.6956], page: "Rankala.html" },
+        { name: "Mahalaxmi Temple", coords: [74.2430, 16.7005], page: "mahalaxmi.html" },
+        { name: "New Palace", coords: [74.2225, 16.6878], page: "newpalace.html" },
+        { name: "Jyotiba Temple", coords: [74.1462, 16.8120], page: "Jyotiba.html" },
+        { name: "Panhala Fort", coords: [74.1073, 16.8127], page: "panhala.html" }
+      ];
+
+      // Create clickable markers
+      locations.forEach(loc => {
+        const el = document.createElement('div');
+        el.className = 'marker';
+        el.style.backgroundImage = 'url(https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png)';
+        el.style.width = '32px';
+        el.style.height = '40px';
+        el.style.backgroundSize = 'contain';
+        el.style.cursor = 'pointer';
+
+        // Open linked page when clicked
+        el.addEventListener('click', () => {
+          window.location.href = loc.page;
+        });
+
+        new mapboxgl.Marker(el)
+          .setLngLat(loc.coords)
+          .addTo(map);
+
+        // Add label above
+        const label = document.createElement('div');
+        label.className = 'map-label';
+        label.textContent = loc.name;
+        new mapboxgl.Marker({ element: label, anchor: 'bottom' })
+          .setLngLat(loc.coords)
+          .addTo(map);
+      });
+
+      // Draw connecting route
+      const routeCoordinates = locations.map(loc => loc.coords);
+      map.addSource('route', {
+        type: 'geojson',
+        data: {
+          type: 'Feature',
+          geometry: { type: 'LineString', coordinates: routeCoordinates }
+        }
+      });
+
+      map.addLayer({
+        id: 'route-line',
+        type: 'line',
+        source: 'route',
+        layout: { 'line-join': 'round', 'line-cap': 'round' },
+        paint: { 'line-color': '#00ffff', 'line-width': 4 }
+      });
+
+      const bounds = new mapboxgl.LngLatBounds();
+      routeCoordinates.forEach(coord => bounds.extend(coord));
+      map.fitBounds(bounds, { padding: 80 });
+    });
+  </script>
 </body>
 </html>
